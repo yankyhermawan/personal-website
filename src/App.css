@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--background-light: #f0f0f0;
+	--background-dark: #060614;
+	--text-light: #333;
+	--text-dark: #eee;
+}
+
+.dark-bg {
+	background-color: var(--background-dark);
+}
+
+.dark-font {
+	color: var(--text-dark);
+}
+
+.light-bg {
+	background-color: var(--background-light);
+}
+
+.light-font {
+	color: var(--text-light);
+}
+
+.App {
+	transition: background-color 0.3s ease, color 0.3s ease;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
