@@ -39,7 +39,7 @@ export default function Skill({ dark }: { dark: boolean }) {
 			return (
 				<tr key={idx}>
 					<td className={classname}>
-						<img src={`/public/${dt.name}.svg`} width={48} className="m-auto" />
+						<img src={`/${dt.name}.svg`} width={48} className="m-auto" />
 					</td>
 					<td className={classname}>
 						<span>{titleCase(dt.prof)}</span>
