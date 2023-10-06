@@ -5,8 +5,8 @@
 :root {
 	--background-light: #f0f0f0;
 	--background-dark: #060614;
-	--text-light: #333;
-	--text-dark: #eee;
+	--text-light: #060614;
+	--text-dark: #f0f0f0;
 }
 
 .dark-bg {

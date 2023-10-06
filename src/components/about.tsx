@@ -1,6 +1,6 @@
 export default function About() {
 	return (
-		<div className="self-start pl-16 pt-16">
+		<div className="self-start pl-16 pt-16" id="about">
 			<p className="text-3xl font-semibold">About Me</p>
 			<div className="flex flex-row gap-32 mt-16">
 				<p className="max-w-screen-xl text-justify">

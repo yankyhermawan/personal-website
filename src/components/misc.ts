@@ -40,12 +40,6 @@ export const skills = [
 		prof: "competent",
 		cat: "front end",
 	},
-
-	{
-		name: "flask",
-		prof: "competent",
-		cat: "back end",
-	},
 	{
 		name: "express",
 		prof: "proficient",
@@ -56,6 +50,12 @@ export const skills = [
 		prof: "proficient",
 		cat: "back end",
 	},
+	{
+		name: "flask",
+		prof: "competent",
+		cat: "back end",
+	},
+
 	{
 		name: "nextjs",
 		prof: "competent",
