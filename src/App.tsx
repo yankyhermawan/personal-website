@@ -8,7 +8,7 @@ function App() {
 	const [dark, setDark] = useState(true);
 	return (
 		<div
-			className={`App h-full flex flex-col justify-between text-white ${
+			className={`App h-full flex flex-col justify-between ${
 				dark ? "dark-bg dark-font" : "light-bg light-font"
 			}`}
 		>
