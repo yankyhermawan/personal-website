@@ -7,7 +7,7 @@ export default function Experience({ dark }: { dark: boolean }) {
 				<div
 					className={`flex flex-col border-solid border-[1px] ${
 						dark ? "border-bgLight" : "border-bgDark"
-					} border-opacity-70 gap-8 p-8`}
+					} border-opacity-70 gap-8`}
 				>
 					<Company />
 				</div>

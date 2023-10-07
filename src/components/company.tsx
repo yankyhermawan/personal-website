@@ -18,7 +18,7 @@ export default function Company() {
 				return (
 					<div
 						key={idx}
-						className="cursor-pointer"
+						className="cursor-pointer p-8"
 						onClick={() => handleOpen(company.name)}
 					>
 						<div className="flex flex-row justify-between gap-16">
@@ -26,7 +26,7 @@ export default function Company() {
 							<p>{`${company.start}-${company.end}`}</p>
 						</div>
 
-						<div className="flex flex-col gap-2">
+						<div className="flex flex-col gap-2 mt-4">
 							{company.name}
 							<p>{company.industry}</p>
 						</div>

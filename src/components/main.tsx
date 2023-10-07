@@ -7,7 +7,7 @@ export default function Main({ dark }: { dark: boolean }) {
 	return (
 		<div className="flex flex-col items-center justify-center w-full">
 			<WordByWordText />
-			<About />
+			<About dark={dark} />
 			<Experience dark={dark} />
 			<Project dark={dark} />
 			<Skill dark={dark} />
