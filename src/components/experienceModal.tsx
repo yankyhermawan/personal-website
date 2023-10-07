@@ -41,6 +41,15 @@ export default function ExperienceModal({
 						: ""}
 				</ul>
 			</Modal.Body>
+			<Modal.Footer>
+				<Button
+					variant="secondary"
+					onClick={handleClose}
+					className="light-font"
+				>
+					Close
+				</Button>
+			</Modal.Footer>
 		</Modal>
 	);
 }
