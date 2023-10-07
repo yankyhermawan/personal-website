@@ -36,7 +36,7 @@ export default function About({ dark }: { dark: boolean }) {
 					</button>
 				</div>
 
-				<img src="/myphoto.jpg" width={250} />
+				<img src="/myphoto.png" width={250} />
 			</div>
 		</div>
 	);

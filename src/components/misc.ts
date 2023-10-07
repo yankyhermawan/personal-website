@@ -105,7 +105,7 @@ export const data = [
 		start: "July 2023",
 		end: "August 2023",
 		tech: ["ExpressJS", "Socket.IO", "RestAPI", "Prisma", "PostgreSQL"],
-		url: "chatterbox-t3.netlify.app",
+		url: "https://chatterbox-t3.netlify.app",
 		github: "https://github.com/yankyhermawan/chatterbox",
 		description:
 			"ChatterBox is a cutting-edge group chat app designed to revolutionize your communication experience. Whether it's connecting with friends, family, or colleagues, ChatterBox offers a seamless and intuitive platform for all your group messaging needs. With its cross-platform capabilities and customizable profiles, ChatterBox brings a new level of convenience and personalization to your conversations.",
@@ -116,7 +116,7 @@ export const data = [
 		start: "September 2023",
 		end: "Present",
 		tech: ["NestJS", "Socket.IO", "RestAPI", "Prisma", "PostgreSQL"],
-		url: "curagan-frontend.vercel.app/",
+		url: "https://curagan-frontend.vercel.app/",
 		github: "https://github.com/yankyhermawan/curagan-backend",
 		description:
 			"Curagan is a mobile-based web application where we can make appointments with available doctors for consultation.",
