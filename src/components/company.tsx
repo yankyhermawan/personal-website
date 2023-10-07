@@ -1,18 +1,26 @@
+import ExperienceModal from "./experienceModal";
+import { companies } from "./misc";
+import { useState } from "react";
 export default function Company() {
-	const companies = [
-		{
-			name: "HUTAMA MANDALA PUTRA",
-			industry: "Metal Fabrication Workshop",
-			start: "Dec 2022",
-			end: "Present",
-			position: "Team Leader",
-		},
-	];
+	const [modalOpen, setModalOpen] = useState(false);
+	const [companyName, setCompanyName] = useState("");
+	const handleOpen = (name: string) => {
+		setModalOpen(true);
+		setCompanyName(name);
+	};
+	const handleClose = () => {
+		setModalOpen(false);
+		setCompanyName("");
+	};
 	return (
 		<>
 			{companies.map((company, idx) => {
 				return (
-					<div key={idx}>
+					<div
+						key={idx}
+						className="cursor-pointer"
+						onClick={() => handleOpen(company.name)}
+					>
 						<div className="flex flex-row justify-between gap-16">
 							<p>{company.position}</p>
 							<p>{`${company.start}-${company.end}`}</p>
@@ -25,6 +33,11 @@ export default function Company() {
 					</div>
 				);
 			})}
+			<ExperienceModal
+				companyName={companyName}
+				modalOpen={modalOpen}
+				handleClose={handleClose}
+			/>
 		</>
 	);
 }

@@ -102,6 +102,8 @@ export const data = [
 	{
 		name: "Chatterbox",
 		role: "Backend Leader",
+		start: "July 2023",
+		end: "August 2023",
 		tech: ["ExpressJS", "Socket.IO", "RestAPI", "Prisma", "PostgreSQL"],
 		url: "chatterbox-t3.netlify.app",
 		github: "https://github.com/yankyhermawan/chatterbox",
@@ -111,6 +113,8 @@ export const data = [
 	{
 		name: "Curagan",
 		role: "Backend",
+		start: "September 2023",
+		end: "Present",
 		tech: ["NestJS", "Socket.IO", "RestAPI", "Prisma", "PostgreSQL"],
 		url: "curagan-frontend.vercel.app/",
 		github: "https://github.com/yankyhermawan/curagan-backend",
@@ -120,10 +124,29 @@ export const data = [
 	{
 		name: "TRAFFIC CONGESTION INDEX OF THE TOP 300 LARGEST CITIES IN THE WORLD BASED ON UNCALIBRATED IFN",
 		role: "Full Stack Developer",
+		start: "December 2021",
+		end: "July 2022",
 		tech: ["Flask", "Open Street Map", "Data", "Python"],
 		url: "https://publication.petra.ac.id/index.php/teknik-sipil/article/view/12933",
 		github: "https://github.com/yankyhermawan/yankyhermawan.github.io",
 		description:
 			"The abstract discusses the Ideal Flow Network (IFN) method, a novel approach for estimating traffic congestion indices without the need for OD-Matrix data. IFN requires a strongly connected road network with balanced traffic flow, making it irreducible and premagic. The research aims to apply IFN to estimate congestion levels in 300 major cities worldwide based on GDP, population, and area. The results will be presented in rankings, a novel application of IFN. Additionally, the study explores the relationship between congestion levels and various indicators. Surprisingly, the research finds little correlation between congestion and GDP, population, or area. The findings are shared on a website to promote IFN as a congestion estimation tool.",
+	},
+];
+
+export const companies = [
+	{
+		name: "HUTAMA MANDALA PUTRA",
+		industry: "Metal Fabrication Workshop",
+		start: "Dec 2022",
+		end: "Present",
+		position: "Team Leader",
+		jobDesc: [
+			"Act as the primary customer contact for project requirements clarification.",
+			"Develop detailed work plans, accounting for project scope, timelines, resources, and budget constraints.",
+			"Communicate project goals, objectives, and deliverables clearly to the project team.",
+			"Monitor project progress, ensuring adherence to timelines, quality standards, and customer requirements.",
+			"Identify and mitigate project risks and develop contingency plans.",
+		],
 	},
 ];

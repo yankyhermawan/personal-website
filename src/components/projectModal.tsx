@@ -16,18 +16,30 @@ export default function ProjectModal({
 	return (
 		<Modal show={modalOpen} onHide={handleClose} className="light-font">
 			<Modal.Header>
-				<Modal.Title>{title}</Modal.Title>
+				<Modal.Title className="w-full">
+					<div className="flex flex-row justify-between">
+						<span>{title}</span>
+						<span className="text-sm flex items-center">
+							{modalOpen ? filtered(title).start : ""} -{" "}
+							{modalOpen ? filtered(title).end : ""}
+						</span>
+					</div>
+				</Modal.Title>
 				<CloseButton onClick={handleClose} />
 			</Modal.Header>
 			<Modal.Body className="flex flex-col gap-4">
+				<div>Role : {modalOpen ? filtered(title).role : ""}</div>
 				<div>{modalOpen ? filtered(title).description : ""}</div>
-				<div>{modalOpen ? filtered(title).role : ""}</div>
 				<div>
 					<span>Technology Used:</span>
-					<ul className="list-disc mt-2 ml-4">
+					<ul className="list-disc list-inside">
 						{modalOpen
 							? filtered(title).tech.map((stack, idx) => {
-									return <li key={idx}>{stack}</li>;
+									return (
+										<li key={idx} className="my-1">
+											{stack}
+										</li>
+									);
 							  })
 							: ""}
 					</ul>

@@ -39,7 +39,11 @@ export default function Skill({ dark }: { dark: boolean }) {
 			return (
 				<tr key={idx}>
 					<td className={`${classname} flex flex-col gap-2`}>
-						<img src={`/${dt.name}.svg`} width={48} className={`m-auto `} />
+						<img
+							src={dark ? `/${dt.name}-dark.svg` : `/${dt.name}-light.svg`}
+							width={48}
+							className={`m-auto `}
+						/>
 						<span
 							className={`border-solid border-t-[1px] ${
 								dark ? "border-bgLight" : "border-bgDark"

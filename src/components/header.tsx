@@ -18,12 +18,15 @@ export default function Header({
 	};
 	useEffect(() => {
 		window.addEventListener("scroll", handleScroll);
-		if (position < 690) {
-			setHeaderFontColor("dark-font");
-		} else if (position >= 690 && dark) {
-			setHeaderFontColor("dark-font");
-		} else if (position >= 690 && !dark) {
-			setHeaderFontColor("light-font");
+		const aboutPosition = document.getElementById("about")?.offsetTop;
+		if (aboutPosition) {
+			if (position < 0.95 * aboutPosition) {
+				setHeaderFontColor("dark-font");
+			} else if (position >= 0.95 * aboutPosition && dark) {
+				setHeaderFontColor("dark-font");
+			} else if (position > 0.95 * aboutPosition && !dark) {
+				setHeaderFontColor("light-font");
+			}
 		}
 		return () => {
 			window.removeEventListener("scroll", handleScroll);

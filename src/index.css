@@ -546,6 +546,11 @@ video {
   margin: auto;
 }
 
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -554,16 +559,8 @@ video {
   margin-top: 4rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .flex {
@@ -619,6 +616,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.list-inside {
+  list-style-position: inside;
 }
 
 .list-disc {
