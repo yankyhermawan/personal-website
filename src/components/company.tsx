@@ -1,7 +1,7 @@
 import ExperienceModal from "./experienceModal";
 import { companies } from "./misc";
 import { useState } from "react";
-export default function Company() {
+export default function Company({ dark }: { dark: boolean }) {
 	const [modalOpen, setModalOpen] = useState(false);
 	const [companyName, setCompanyName] = useState("");
 	const handleOpen = (name: string) => {
@@ -18,7 +18,9 @@ export default function Company() {
 				return (
 					<div
 						key={idx}
-						className="cursor-pointer p-8"
+						className={`cursor-pointer p-8 flex flex-col gap-2 mt-4 border-solid border-[1px] ${
+							dark ? "border-bgLight" : "border-bgDark"
+						} border-opacity-70 gap-8`}
 						onClick={() => handleOpen(company.name)}
 					>
 						<div className="flex flex-row justify-between gap-16">
@@ -26,7 +28,7 @@ export default function Company() {
 							<p>{`${company.start}-${company.end}`}</p>
 						</div>
 
-						<div className="flex flex-col gap-2 mt-4">
+						<div className={`flex flex-col gap-2 mt-4`}>
 							{company.name}
 							<p>{company.industry}</p>
 						</div>

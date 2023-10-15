@@ -14,12 +14,17 @@ export default function ProjectModal({
 		return data.filter((dt) => dt.name === title)[0];
 	};
 	return (
-		<Modal show={modalOpen} onHide={handleClose} className="light-font">
+		<Modal
+			show={modalOpen}
+			onHide={handleClose}
+			className="light-font"
+			size="lg"
+		>
 			<Modal.Header>
 				<Modal.Title className="w-full">
 					<div className="flex flex-row justify-between">
 						<span>{title}</span>
-						<span className="text-sm flex items-center">
+						<span className="text-sm flex items-center min-w-fit">
 							{modalOpen ? filtered(title).start : ""} -{" "}
 							{modalOpen ? filtered(title).end : ""}
 						</span>
@@ -27,7 +32,7 @@ export default function ProjectModal({
 				</Modal.Title>
 				<CloseButton onClick={handleClose} />
 			</Modal.Header>
-			<Modal.Body className="flex flex-col gap-4">
+			<Modal.Body className="flex flex-col gap-4 p-3">
 				<div>Role : {modalOpen ? filtered(title).role : ""}</div>
 				<div>{modalOpen ? filtered(title).description : ""}</div>
 				<div>
