@@ -136,27 +136,6 @@ export const data = [
 
 export const companies = [
 	{
-		name: "HUTAMA MANDALA PUTRA",
-		industry: "Metal Fabrication Workshop",
-		start: "Dec 2022",
-		end: "Present",
-		position: "Team Leader",
-		jobDesc: [
-			"Act as the primary customer contact for project requirements clarification.",
-			"Develop detailed work plans, accounting for project scope, timelines, resources, and budget constraints.",
-			"Communicate project goals, objectives, and deliverables clearly to the project team.",
-			"Monitor project progress, ensuring adherence to timelines, quality standards, and customer requirements.",
-			"Identify and mitigate project risks and develop contingency plans.",
-		],
-		skills: [
-			"Leadership",
-			"Team Work",
-			"Communication",
-			"Critical Thinking",
-			"Problem Solving",
-		],
-	},
-	{
 		name: "RevoU Next Internship",
 		industry: "Education",
 		start: "Aug 2023",
@@ -176,6 +155,27 @@ export const companies = [
 			"Authorization",
 			"Prisma",
 			"PostgreSQL",
+		],
+	},
+	{
+		name: "HUTAMA MANDALA PUTRA",
+		industry: "Metal Fabrication Workshop",
+		start: "Dec 2022",
+		end: "Present",
+		position: "Team Leader",
+		jobDesc: [
+			"Act as the primary customer contact for project requirements clarification.",
+			"Develop detailed work plans, accounting for project scope, timelines, resources, and budget constraints.",
+			"Communicate project goals, objectives, and deliverables clearly to the project team.",
+			"Monitor project progress, ensuring adherence to timelines, quality standards, and customer requirements.",
+			"Identify and mitigate project risks and develop contingency plans.",
+		],
+		skills: [
+			"Leadership",
+			"Team Work",
+			"Communication",
+			"Critical Thinking",
+			"Problem Solving",
 		],
 	},
 ];
