@@ -179,3 +179,34 @@ export const companies = [
 		],
 	},
 ];
+
+export const education = [
+	{
+		schoolName: "RevoU",
+		major: "Full Stack Software Engineer",
+		title: "",
+		start: "January 2023",
+		end: "August 2023",
+		thesis: "Chatterbox",
+		grade: "",
+	},
+	{
+		schoolName: "Universitas Kristen Petra",
+		major: "Civil Engineering",
+		title: "Bachelor (S.T.)",
+		start: "July 2017",
+		end: "July 2022",
+		thesis:
+			"TRAFFIC CONGESTION INDEX OF THE TOP 300 LARGEST CITIES IN THE WORLD BASED ON UNCALIBRATED IFN",
+		grade: "2.81",
+	},
+	{
+		schoolName: "SMAK Kolese Santo Yusup Malang",
+		major: "Science",
+		title: "",
+		start: "July 2014",
+		end: "June 2017",
+		thesis: "",
+		grade: "",
+	},
+];

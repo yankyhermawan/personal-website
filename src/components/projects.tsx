@@ -17,15 +17,14 @@ export default function Project({ dark }: { dark: boolean }) {
 		<>
 			<div className="self-start pl-16 pt-16" id="projects">
 				<p className="text-3xl font-semibold">Projects</p>
-				<div className="flex flex-row flex-wrap mt-8 font-semibold gap-4">
+				<div className="flex flex-row flex-wrap mt-8 font-semibold gap-4 items-center">
 					{data.map((dt, idx) => {
 						return (
 							<div
-								className={`flex flex-col flex-wrap w-[500px] border-solid border-[1px] ${
+								className={`flex flex-col flex-wrap w-[500px] h-fit border-solid border-[1px] ${
 									dark ? "border-bgLight" : "border-bgDark"
 								} border-opacity-70 gap-8 p-8 cursor-pointer`}
 								key={idx}
-								onClick={() => handleOpen(dt.name)}
 							>
 								<div className="flex flex-row gap-4">
 									<span className="min-w-fit">Project Name :</span>
@@ -52,6 +51,14 @@ export default function Project({ dark }: { dark: boolean }) {
 											</a>
 										</li>
 									</ul>
+								</div>
+								<div
+									className={`p-2 w-fit mt-4 hover:bg-slate-500 details rounded-lg border-solid border-[1px] ${
+										dark ? "border-bgLight" : "border-bgDark"
+									}`}
+									onClick={() => handleOpen(dt.name)}
+								>
+									Details
 								</div>
 							</div>
 						);

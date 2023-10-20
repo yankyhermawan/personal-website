@@ -21,7 +21,6 @@ export default function Company({ dark }: { dark: boolean }) {
 						className={`cursor-pointer p-8 flex flex-col gap-2 mt-4 border-solid border-[1px] ${
 							dark ? "border-bgLight" : "border-bgDark"
 						} border-opacity-70 gap-8`}
-						onClick={() => handleOpen(company.name)}
 					>
 						<div className="flex flex-row justify-between gap-16">
 							<p>{company.position}</p>
@@ -31,6 +30,14 @@ export default function Company({ dark }: { dark: boolean }) {
 						<div className={`flex flex-col gap-2 mt-4`}>
 							{company.name}
 							<p>{company.industry}</p>
+						</div>
+						<div
+							className={`p-2 w-fit mt-4 hover:bg-slate-500 details rounded-lg border-solid border-[1px] ${
+								dark ? "border-bgLight" : "border-bgDark"
+							}`}
+							onClick={() => handleOpen(company.name)}
+						>
+							Details
 						</div>
 					</div>
 				);
