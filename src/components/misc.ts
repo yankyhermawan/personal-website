@@ -139,7 +139,7 @@ export const companies = [
 		name: "RevoU Next Internship",
 		industry: "Education",
 		start: "Aug 2023",
-		end: "Present",
+		end: "Dec 2023",
 		position: "Backend Developer",
 		jobDesc: [
 			"Designed and implemented secure user authentication, authorization, and role-based access control using JWT tokens in a web application.",
