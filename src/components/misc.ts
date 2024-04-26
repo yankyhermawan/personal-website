@@ -136,6 +136,26 @@ export const data = [
 
 export const companies = [
 	{
+		name: "Moving Bytes Digital",
+		industry: "Software House",
+		start: "Feb 2024",
+		end: "Present",
+		position: "Software Engineer",
+		jobDesc: [
+			"Develop and maintaining client program",
+			"Handling Front End and Back End for an ERP Program.",
+			"Solving any clients issues (Bug Fixing, Improvement, Feature)."
+		],
+		skills: [
+			"Fullstack Development",
+			"ExpressJS",
+			"ReactJS",
+			"mySQL",
+			"Sequelize",
+			"Docker"
+		],
+	},
+	{
 		name: "RevoU Next Internship",
 		industry: "Education",
 		start: "Aug 2023",
@@ -161,7 +181,7 @@ export const companies = [
 		name: "HUTAMA MANDALA PUTRA",
 		industry: "Metal Fabrication Workshop",
 		start: "Dec 2022",
-		end: "Present",
+		end: "Feb 2024",
 		position: "Team Leader",
 		jobDesc: [
 			"Act as the primary customer contact for project requirements clarification.",
